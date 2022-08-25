@@ -24,7 +24,7 @@ class OrderMapperTest extends HttpServlet {
 
     private final static String USER = "carport";
     private final static String PASSWORD = "carport";
-    private final static String URL = "jdbc:mysql://localhost:3306/carport_test?serverTimezone=CET&allowPublicKeyRetrieval=true&useSSL=false";
+    private final static String URL = "jdbc:mysql://localhost:3306/startcode_test?serverTimezone=CET&allowPublicKeyRetrieval=true&useSSL=false";
 
     private static ConnectionPool connectionPool;
     private static OrderMapper orderMapper;
