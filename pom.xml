@@ -6,6 +6,7 @@
     <artifactId>startcode</artifactId>
     <version>1.0.1</version>
     <packaging>war</packaging>
+    <name>carport</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
