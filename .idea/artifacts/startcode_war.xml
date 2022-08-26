@@ -9,7 +9,7 @@
         <unpackNestedArchives>false</unpackNestedArchives>
       </options>
     </properties>
-    <root id="archive" name="startcode-1.0.1.war">
+    <root id="archive" name="carport-1.0.1.war">
       <element id="artifact" artifact-name="startcode:war exploded" />
     </root>
   </artifact>
