@@ -38,7 +38,7 @@ class UserMapperTest {
                 stmt.execute("delete from user");
                 // Indsæt et par brugere
                 stmt.execute("insert into user (email, full_name, password, balance, address, zip_nr, role) " +
-                        "values ('a@a.dk', 'Adminbruger', '1234', '10000', 'Nørgaardsvej 30', '2800', 'admin'), ('b@b.dk', 'Testbruger', '1234', '10000', 'Nørgaardsvej 30', '2800', 'user')");
+                        "values ('a@a.dk', 'Adminbruger', '1234', '100000', 'Nørgaardsvej 30', '2800', 'admin'), ('b@b.dk', 'Testbruger', '1234', '100000', 'Nørgaardsvej 30', '2800', 'user')");
             }
         } catch (SQLException throwables) {
             System.out.println(throwables.getMessage());
@@ -57,7 +57,7 @@ class UserMapperTest {
 
     @Test
     void login() throws DatabaseException {
-        User expectedUser = new User("a@a.dk", "Adminbruger", "1234",10000, "Nørgaardsvej 30", 2800, "admin");
+        User expectedUser = new User("a@a.dk", "Adminbruger", "1234",100000, "Nørgaardsvej 30", 2800, "admin");
         User actualUser = userMapper.login("a@a.dk", "1234");
         assertEquals(expectedUser, actualUser);
     }
