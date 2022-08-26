@@ -10,8 +10,8 @@ import java.util.logging.Logger;
 
 public class ConnectionPool {
     private HikariDataSource ds;
-    private static String USER = "carport";
-    private static String PASSWORD = "carport";
+    private static String USER = "chomin";
+    private static String PASSWORD = "Chominersej123";
     private static String URL = "jdbc:mysql://localhost:3306/carport"+"?useUnicode=true&characterEncoding=UTF-8";
 
     public ConnectionPool() {

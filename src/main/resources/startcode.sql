@@ -297,6 +297,10 @@ SET SQL_MODE = @OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS = @OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS = @OLD_UNIQUE_CHECKS;
 
+INSERT INTO `carport`.`unit`(unit_name) VALUES ('Stk');
+INSERT INTO `carport`.`unit`(unit_name) VALUES ('Pakke');
+INSERT INTO `carport`.`unit`(unit_name) VALUES ('Rulle');
+
 
 INSERT INTO `carport`.`product`(product_price,product_name,unit_id) VALUES (100,'25x200 mm trykimp Brædt',1);
 INSERT INTO `carport`.`product`(product_price,product_name,unit_id) VALUES (75,'25x125mm trykimp Brædt',1);
@@ -319,9 +323,4 @@ INSERT INTO `carport`.`product`(product_price,product_name,unit_id) VALUES (150,
 INSERT INTO `carport`.`product`(product_price,product_name,unit_id) VALUES (169,'stalddørsgreb 50x75',1);
 INSERT INTO `carport`.`product`(product_price,product_name,unit_id) VALUES (79,'t hængsel 390 mm',1);
 INSERT INTO `carport`.`product`(product_price,product_name,unit_id) VALUES (70,'vinkelbeslag 35',1);
-
-
-INSERT INTO `carport`.`unit`(unit_name) VALUES ('Stk');
-INSERT INTO `carport`.`unit`(unit_name) VALUES ('Pakke');
-INSERT INTO `carport`.`unit`(unit_name) VALUES ('Rulle');
 
